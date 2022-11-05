@@ -17,12 +17,6 @@
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-            </li>
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
                 Alumnos
@@ -30,13 +24,20 @@
                 <div class="dropdown-menu">
                 <a class="dropdown-item" href="{{url('/alumnos')}}">Consultar</a>
                 <a class="dropdown-item" href="{{url('/alumno/registrar')}}">Registrar</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Something else here</a>
                 </div>
             </li>
-            <li class="nav-item">
-                <a class="nav-link disabled">Disabled</a>
+
+
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+                Especialidades
+                </a>
+                <div class="dropdown-menu">
+                <a class="dropdown-item" href="{{url('/especialidades')}}">Consultar</a>
+                <a class="dropdown-item" href="{{url('/especialidades/registrar')}}">Registrar</a>
+                </div>
             </li>
+            
             </ul>
             <form class="form-inline my-2 my-lg-0">
             <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
